@@ -1,7 +1,7 @@
 <ul class="beverages-list">
   {{#each this}}
   <li class="beverage-preview">
-    <input class="compare" type="checkbox">
+    <input class="compare" type="checkbox" data-id="{{id}}">
     <img src="{{image}}">
     <h1>{{name}}</h1>
     <h2>${{price}}</h2>
