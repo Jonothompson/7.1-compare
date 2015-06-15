@@ -1,13 +1,13 @@
 {{#each this}}
 <div class="product">
   <div class="product__info">
-    <img class="product__image" src="images/{{image}}" alt="Product {{id}}" />
+    <img class="product__image" src="images/{{picture}}" alt="Product {{id}}" />
     <h3 class="product__title">{{title}}</h3>
-    <span class="product__year extra highlight">2011</span>
-    <span class="product__region extra highlight">Douro</span>
-    <span class="product__varietal extra highlight">Touriga Nacional</span>
-    <span class="product__alcohol extra highlight">13%</span>
-    <span class="product__price highlight">${{price}}</span>
+    <span class="product__year extra highlight">{{year}}</span>
+    <span class="product__region extra highlight">{{region}}</span>
+    <span class="product__varietal extra highlight">{{variety}}</span>
+    <span class="product__alcohol extra highlight">{{alcohol}}</span>
+    <span class="product__price highlight">{{price}}</span>
     <button class="action action--button action--buy">
       <i class="fa fa-shopping-cart"></i>
       <span class="action__text">Add to cart</span>
