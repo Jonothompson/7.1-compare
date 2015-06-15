@@ -1,3 +1,5 @@
+import IndexView from './views/index';
+
 (function(){
   'use strict';
 
@@ -9,6 +11,7 @@
       {id: 3, name: "Antucura Cabernet Sauvignon", price: 1590, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
     ]);
 
-    $('body').prepend(JST.application(beverages.toJSON()));
+    var indexView = new IndexView({collection: beverages});
+    $('#app').html(indexView.el);
   });
 })();
