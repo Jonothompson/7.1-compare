@@ -2,6 +2,13 @@
   'use strict';
 
   $(document).ready(function(){
-    $('body').prepend(JST.application());
+
+    var beverages = new Backbone.Collection([
+      {id: 1, name: "Chryseia", price: 5590, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
+      {id: 2, name: "Meiomi Pinot Noir", price: 1990, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
+      {id: 3, name: "Antucura Cabernet Sauvignon", price: 1590, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
+    ]);
+
+    $('body').prepend(JST.application(beverages.toJSON()));
   });
 })();
