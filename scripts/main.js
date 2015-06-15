@@ -6,12 +6,12 @@ import IndexView from './views/index';
   $(document).ready(function(){
 
     var beverages = new Backbone.Collection([
-      {id: 1, name: "Chryseia", price: 5590, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
-      {id: 2, name: "Meiomi Pinot Noir", price: 1990, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
-      {id: 3, name: "Antucura Cabernet Sauvignon", price: 1590, image: "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg"},
+      {id: 1, title: "Chryseia", price: 5590, image: '1.png'},
+      {id: 2, title: "Meiomi Pinot Noir", price: 1990, image: '1.png'},
+      {id: 3, title: "Antucura Cabernet Sauvignon", price: 1590, image: '1.png'},
     ]);
 
     var indexView = new IndexView({collection: beverages});
-    $('#app').html(indexView.el);
+    $('.view').html(indexView.el);
   });
 })();

@@ -1,5 +1,7 @@
 export default Backbone.View.extend({
   template: JST.index,
+  tagName: 'section',
+  className: 'grid',
 
   events: {
     'click .compare': 'compareBeverage'

@@ -8,12 +8,23 @@
     <title></title>
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/styles/main.css">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+    <!-- Compare basket -->
+    <div class="compare-basket">
+      <!-- comparison item miniatures come here -->
+      <button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
+    </div>
+    <div class="view"></div>
+    <!-- product compare wrapper -->
+    <section class="compare">
+      <!-- comparison items come here -->
+      <button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
+    </section>
 
     <div id="app"></div>
 
