@@ -1,4 +1,4 @@
-import IndexView from './views/index';
+import BeverageListView from './views/beverage-list';
 import {BeverageCollection} from './models/beverage';
 
 (function(){
@@ -7,8 +7,8 @@ import {BeverageCollection} from './models/beverage';
   $(document).ready(function(){
     var beverages = new BeverageCollection();
     beverages.fetch().then(function(){
-      var indexView = new IndexView({collection: beverages});
-      $('.view').html(indexView.el);
+      var beverageListView = new BeverageListView({collection: beverages});
+      $('.view').html(beverageListView.el);
     });
   });
 })();

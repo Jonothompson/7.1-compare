@@ -1,5 +1,5 @@
 export default Backbone.View.extend({
-  template: JST.index,
+  template: JST['beverage-list'],
   tagName: 'section',
   className: 'grid',
 
